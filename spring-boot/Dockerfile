@@ -17,4 +17,4 @@ RUN dpkg-reconfigure -f noninteractive tzdata
 
 WORKDIR /app
 
-EXPOSE 80
+EXPOSE 8080
