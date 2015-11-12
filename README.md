@@ -1,6 +1,7 @@
 # Spring Boot image
 
 Version: 0.2 (alpha)
+
 We use the Dockerfiles in production but this repository is under heavy development and can change anytime.
 
 ## Tags
