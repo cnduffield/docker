@@ -4,7 +4,7 @@
 [![](https://img.shields.io/docker/pulls/bankmonitor/spring-boot.svg)](https://hub.docker.com/r/bankmonitor/spring-boot/ 'Docker hub')
 [![](https://badge.imagelayers.io/bankmonitor/spring-boot:latest.svg)](https://imagelayers.io/?images=bankmonitor/spring-boot:latest 'Get your own badge on imagelayers.io')
 
-Version: 0.2 (alpha)
+Version: 0.4
 
 We use the Dockerfiles in production but this repository is under heavy development and can change anytime.
 

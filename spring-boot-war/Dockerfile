@@ -2,6 +2,7 @@ FROM java:8-jdk
 MAINTAINER István Földházi <istvan.foldhazi@gmail.com>
 
 ENV JAVA_HOME              /usr/lib/jvm/java-8-openjdk-amd64
+ENV JAVA_OPTS              ""
 ENV PATH                   $PATH:$JAVA_HOME/bin
 
 ENV TIME_ZONE              Europe/Budapest

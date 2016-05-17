@@ -2,6 +2,7 @@ FROM java:8-jdk
 MAINTAINER István Földházi <istvan.foldhazi@gmail.com>
 
 ENV JAVA_HOME              /usr/lib/jvm/java-8-openjdk-amd64
+ENV JAVA_OPTS              ""
 ENV PATH                   $PATH:$JAVA_HOME/bin
 
 ENV TIME_ZONE              Europe/Budapest
@@ -21,4 +22,4 @@ EXPOSE 8080
 
 ONBUILD COPY app.jar /app/app.jar
 
-CMD ["/bin/sh", "-c", "java -DCUSTOM_LOCAL_NAME=$CUSTOM_LOCAL_NAME -jar /app/app.jar --spring.profiles.active=$SPRING_PROFILES_ACTIVE"]
+CMD ["/bin/sh", "-c", "java $JAVA_OPTS -DCUSTOM_LOCAL_NAME=$CUSTOM_LOCAL_NAME -jar /app/app.jar --spring.profiles.active=$SPRING_PROFILES_ACTIVE"]
