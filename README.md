@@ -8,16 +8,16 @@ Version: 0.4
 
 We use the Dockerfiles in production but this repository is under heavy development and can change anytime.
 
-## Tags
+## Docker Tags
 
-- [`latest`](https://github.com/Bankmonitor/docker/blob/master/spring-boot/Dockerfile): base image
-- [`latest-jar`](https://github.com/Bankmonitor/docker/blob/master/spring-boot-jar/Dockerfile): image for JAR application
-- [`latest-war`](https://github.com/Bankmonitor/docker/blob/master/spring-boot-jar/Dockerfile): image for WAR application
+- [`latest`](https://github.com/Bankmonitor/docker/blob/master/Dockerfile): image for JAR application
+- [`latest-war`](https://github.com/Bankmonitor/docker/blob/war/Dockerfile): image for WAR application
 
 ## Environment variables
 
 Name                    | Default                 | Description
 ------------------------|-------------------------|------------------------------------
+JAVA_OPTS               | (empty)                 | Java command line options
 TIME_ZONE               | 'Europe/Budapest'       | The time zone [(List of tz database time zones)](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 CUSTOM_LOCAL_NAME       | 'unknown-host'          | A custom local name used in our custom Logback Syslog4j appender [(BankmonitorSyslogMessageProcessor)](https://github.com/Bankmonitor/microservice-starters/blob/0.0.44/microservice-starter-common/src/main/java/hu/bankmonitor/starter/microservice/common/log/BankmonitorSyslogMessageProcessor.java#L30)
 SPRING_PROFILES_ACTIVE  | 'test'                  | Active Spring profiles
@@ -47,7 +47,7 @@ cp /tmp/sample-app/target/app.jar app.jar
 Dockerfile contents:
 
 ```Dockerfile
-FROM bankmonitor:spring-boot:latest-jar
+FROM bankmonitor/spring-boot
 ```
 
 * Step 4: Build the new image
