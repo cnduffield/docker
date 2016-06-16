@@ -4,7 +4,7 @@
 [![](https://img.shields.io/docker/pulls/bankmonitor/spring-boot.svg)](https://hub.docker.com/r/bankmonitor/spring-boot/ 'Docker hub')
 [![](https://badge.imagelayers.io/bankmonitor/spring-boot:latest.svg)](https://imagelayers.io/?images=bankmonitor/spring-boot:latest 'Get your own badge on imagelayers.io')
 
-Version: 0.4
+Version: 1.0
 
 We use the Dockerfiles in production but this repository is under heavy development and can change anytime.
 
@@ -19,7 +19,6 @@ Name                    | Default                 | Description
 ------------------------|-------------------------|------------------------------------
 JAVA_OPTS               | (empty)                 | Java command line options
 TIME_ZONE               | 'Europe/Budapest'       | The time zone [(List of tz database time zones)](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-CUSTOM_LOCAL_NAME       | 'unknown-host'          | A custom local name used in our custom Logback Syslog4j appender [(BankmonitorSyslogMessageProcessor)](https://github.com/Bankmonitor/microservice-starters/blob/0.0.44/microservice-starter-common/src/main/java/hu/bankmonitor/starter/microservice/common/log/BankmonitorSyslogMessageProcessor.java#L30)
 SPRING_PROFILES_ACTIVE  | 'test'                  | Active Spring profiles
 
 ## Testing the image (step-by-step)
