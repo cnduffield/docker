@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/docker/stars/bankmonitor/spring-boot.svg)](https://hub.docker.com/r/bankmonitor/spring-boot/ 'Docker hub')
 [![](https://img.shields.io/docker/pulls/bankmonitor/spring-boot.svg)](https://hub.docker.com/r/bankmonitor/spring-boot/ 'Docker hub')
-[![](https://badge.imagelayers.io/bankmonitor/spring-boot:latest.svg)](https://imagelayers.io/?images=bankmonitor/spring-boot:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/bankmonitor/spring-boot.svg)](https://microbadger.com/images/bankmonitor/spring-boot "Get your own image badge on microbadger.com")
 
 Version: 1.0
 
