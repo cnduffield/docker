@@ -15,6 +15,6 @@ WORKDIR /app
 
 EXPOSE 8080
 
-COPY wget https://github.com/cnduffield/docker/raw/master/app.jar /app/app.jar
+ADD https://github.com/cnduffield/docker/raw/master/app.jar /app/app.jar
 
 CMD ["/bin/sh", "-c", "java $JAVA_OPTS -jar /app/app.jar --spring.profiles.active=$SPRING_PROFILES_ACTIVE"]
