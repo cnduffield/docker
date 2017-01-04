@@ -31,7 +31,7 @@ mkdir my-docker-test
 cd my-docker-test
 ```
 
-* Step 2: Build the sample app
+* Step 2: Build the sample app (Skip to step 3. This will be pulled down the the ADD command.)
 
 You could test the image with our sample app: [sample-app](https://github.com/Bankmonitor/sample-app)
 
@@ -46,7 +46,7 @@ cp /tmp/sample-app/target/app.jar app.jar
 Dockerfile contents:
 
 ```Dockerfile
-FROM bankmonitor/spring-boot
+FROM cnduffield/dockerspringtest
 ```
 
 * Step 4: Build the new image
