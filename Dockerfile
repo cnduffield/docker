@@ -15,6 +15,6 @@ WORKDIR /app
 
 EXPOSE 8080
 
-ONBUILD COPY app.jar /app/app.jar
+ONBUILD COPY /home/keyvan/app.jar.jar /app/app.jar
 
 CMD ["/bin/sh", "-c", "java $JAVA_OPTS -jar /app/app.jar --spring.profiles.active=$SPRING_PROFILES_ACTIVE"]
