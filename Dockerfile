@@ -15,6 +15,6 @@ WORKDIR /app
 
 EXPOSE 8080
 
-COPY /home/keyvan/app.jar /app/app.jar
+COPY wget https://github.com/cnduffield/docker/edit/master/Dockerfile/app.jar /app/app.jar
 
 CMD ["/bin/sh", "-c", "java $JAVA_OPTS -jar /app/app.jar --spring.profiles.active=$SPRING_PROFILES_ACTIVE"]
